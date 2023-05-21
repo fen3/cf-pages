@@ -83,19 +83,19 @@
         [['https://qwerty.kaiyi.cool/', '打字练习'], ['https://zm-digicol.dpm.org.cn/', '故宫藏品']],
         [['https://ant-design.antgroup.com/index-cn', 'antd国内']]
     ];
-    const htmlParts = []
-    htmlParts.push('<div class="container">')
+    const htmlParts = [];
+    htmlParts.push('<div class="container">');
     for (let rowIdx = 0, maxRow = sites.length; rowIdx < maxRow; rowIdx++) {
-        htmlParts.push('<div class="row">')
-        row = sites[rowIdx]
+        htmlParts.push('<div class="row">');
+        row = sites[rowIdx];
         for (let colIdx = 0, maxCol = row.length; colIdx < maxCol; colIdx++) {
-            site = row[colIdx]
-            htmlParts.push(`<a class="icol" href="${site[0]}">${site[1]}</a>`)
+            site = row[colIdx];
+            htmlParts.push(`<a class="icol" href="${site[0]}">${site[1]}</a>`);
         }
-        htmlParts.push('</div>')
+        htmlParts.push('</div>');
     }
-    htmlParts.push('</div>')
-    document.getElementById("sites").innerHTML = htmlParts.join('')
+    htmlParts.push('</div>');
+    document.getElementById("sites").innerHTML = htmlParts.join('');
 </script>
 
 </html>
